@@ -10,6 +10,12 @@ Dockerイメージを作る
 $ docker build -t ngt .
 ```
 
+NGTのバージョンを指定する場合は、
+```sh
+$ docker build --build-arg NGT_VERSION=2.0.9 -t ngt .
+```
+とする
+
 ### Dockerコンテナを作る
 ```sh
 $ docker run -it -d --name ngt-example ngt
